@@ -11,7 +11,7 @@
     height: 100vh;
 }
 
-/* 菜單 */
+/* LOGO */
 #banner #nav-left img {
     float: left;
     margin: 50px;
@@ -19,104 +19,123 @@
     height: 130px;
 }
 
+/* 菜單頁面 */
+#toggle{
+  display: none;
+}
 
-#banner #nav-right {
- float: right;
-  width: 30px;
-  height: 30px;
-  margin: 50px;
+header nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+/* 菜單選項 */
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 100px auto 0;
+  position: absolute;
+  left: 50%;
+  top: 170px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* 菜單選項 */
+header nav ul li {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+
+/* 菜單選項 */
+header nav ul li a {
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+  color: #ffc72c;
+}
+
+/* 菜單按鈕 */
+.toggle-btn {
+  float:right;
+  display: block;
+  z-index: 10;
+  padding:50px;
   cursor: pointer;
 }
-#nav-right span {
-    float: right;
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 50%;
-    background: #505050;
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  }
-  
-  #nav-right span:nth-child(even) {
-    left: 50%;
-    border-radius: 0 9px 9px 0;
-  }
-  
-  #nav-right span:nth-child(odd) {
-    left:0px;
-    border-radius: 9px 0 0 9px;
-  }
-  
-  #nav-right span:nth-child(1), #nav-right span:nth-child(2) {
-    top: 0px;
-  }
-  
-  #nav-right span:nth-child(3), #nav-right span:nth-child(4) {
-    top: 18px;
-  }
-  
-  #nav-right span:nth-child(5), #nav-right span:nth-child(6) {
-    top: 36px;
-  }
-  
-  #nav-right.open span:nth-child(1),#nav-right.open span:nth-child(6) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  #nav-right.open span:nth-child(2),#nav-right.open span:nth-child(5) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  
-  #nav-right.open span:nth-child(1) {
-    left: 5px;
-    top: 7px;
-  }
-  
-  #nav-right.open span:nth-child(2) {
-    left: calc(50% - 5px);
-    top: 7px;
-  }
-  
-  #nav-right.open span:nth-child(3) {
-    left: -50%;
-    opacity: 0;
-  }
-  
-  #nav-right.open span:nth-child(4) {
-    left: 100%;
-    opacity: 0;
-  }
-  
-  #nav-right.open span:nth-child(5) {
-    left: 5px;
-    top: 29px;
-  }
-  
-  #nav-right.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 29px;
-  }
-  
+
+/* 菜單按鈕2 */
+.toggle-btn .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px auto;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+}
+.toggle-btn .bar:nth-child(2) {
+  width: 20px;
+}
+
+#toggle:checked ~ nav {
+  opacity: 1;
+  visibility: visible;
+}
+#toggle:checked ~ nav ul {
+  top: 70px;
+}
+#toggle:checked ~ nav ul li {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+#toggle:checked ~ nav ul li:nth-child(1) {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+}
+#toggle:checked ~ nav ul li:nth-child(2) {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+}
+#toggle:checked ~ nav ul li:nth-child(3) {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+}
+#toggle:checked ~ nav ul li:nth-child(4) {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+}
+#toggle:checked + label.toggle-btn .bar {
+  background-color: rgb(255, 214, 30);
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(2) {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
