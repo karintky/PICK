@@ -128,9 +128,8 @@ header nav ul li a:hover {
 
 
 /* 關於我們 */
-
 #about-content{
-height: 3600px;
+height: 2160px;
 }
 
 #about-content>div {
@@ -143,7 +142,17 @@ height: 3600px;
   padding: 10px;
 }
 
+#about-content h3 {
+ font-size: 50px;
+}
+
 #about-content p {
   line-height: 3;
   padding: 15px;
 }
+
+#about-content-1{
+  height: 500px;
+  background: rgb(48, 190, 255);
+  }
+  
