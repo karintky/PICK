@@ -37,6 +37,9 @@ header nav ul {
   transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 header nav ul li {
   -webkit-transform: translateY(50px);
