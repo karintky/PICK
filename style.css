@@ -38,8 +38,6 @@ nav {
 /* 菜單選項 */
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   position: absolute;
   left: 50%;
   top: 170px;
@@ -178,16 +176,45 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-#about-content1 #about-right,#about-left-1 h3, p{
-  padding: 20px 60px;
+#about-content1 #about-right h3,p{
+  padding: 30px 60px;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 2;
+}
+
+#about-left-1 h3,p{
+  padding: 50px 60px;
 }
 
 #about-content1 #about-right h3, #about-content2 #about-left-1 h3 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: normal;
 }
 
-#about-content1 #about-right , #about-content2 #about-left-1 hr{
+#about-content1 #about-right hr{
   width: 800px;
   margin-left: 60px;
+}
+
+#about-content2 #about-left-1 hr{
+  width: 800px;
+  margin-left: 60px;
+}
+
+#about-content2 #about-left-1 a{
+  margin-left: 60px;
+  padding: 15px 60px;
+  text-decoration: none;
+  color: #555555;
+  border: 3px solid rgb(5, 5, 5);
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#about-content2 #about-left-1 a:hover {
+  color: rgb(15, 15, 15);
+  background: rgb(233, 212, 22);
 }
