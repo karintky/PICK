@@ -12,6 +12,7 @@
   width: 130px;
   height: 130px;
   margin: 50px 70px;
+  position: fixed;
 }
 
 /* 菜單背景 */
@@ -164,29 +165,29 @@ nav ul li a:hover {
   background-position: center;
 }
 
-#about-contents {
+#about-content1,#about-content2 {
     width: 100%;
     height: 500px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
 }
 
-#about-contents #about-left {
+#about-content1 #about-left , #about-right-2{
     background-image: url("./img/apple.jpg");
     height: 500px;
     background-size: cover;
 }
 
-#about-contents #about-right h3, p{
+#about-content1 #about-right,#about-left-1 h3, p{
   padding: 20px 60px;
 }
 
-#about-contents #about-right h3{
+#about-content1 #about-right h3, #about-content2 #about-left-1 h3 {
   font-size: 80px;
   font-weight: normal;
 }
 
-#about-contents #about-right hr{
+#about-content1 #about-right , #about-content2 #about-left-1 hr{
   width: 800px;
   margin-left: 60px;
 }
