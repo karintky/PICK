@@ -1,19 +1,29 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 * {
-  font-family : 微軟正黑體 ;
+  font-family: 'Noto Sans TC', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* LOGO */
-.logo img {
-width: 150px;
-height: 150px;
-margin: 60px;
+.logo img , #banner .logo{
+  width: 130px;
+  height: 130px;
+  margin: 50px 70px;
 }
 
 /* 菜單背景 */
-header nav {
+ul span {
+  font-size: 15px;
+  top: 0;
+  float: left;
+  font-weight: 10px;
+}
+
+nav {
   background-color: #000;
   position: fixed;
   top: 0;
@@ -26,7 +36,7 @@ header nav {
 }
 
 /* 菜單選項 */
-header nav ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -36,29 +46,33 @@ header nav ul {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-
+  transform: translateX(-50%);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 150px 200px;
 }
-header nav ul li {
+
+nav ul li {
   -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
   opacity: 0;
 }
-header nav ul li a {
+
+ nav ul li a {
   display: block;
   font-size: 40px;
   text-decoration: none;
   padding: 10px 0;
   text-align: center;
-  color: rgb(226, 226, 226);
-  font-weight: 200;
+  color: #e2e2e2;
+  font-weight: 10px;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-header nav ul li a:hover {
+
+nav ul li a:hover {
   color: #ffe552;
 }
 
@@ -77,86 +91,94 @@ header nav ul li a:hover {
   width: 40px;
   height: 3px;
   margin: 7px auto;
-  background-color: rgb(85, 85, 85);
+  background-color: #555555;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 /* 菜單按鈕樣式 */
 .menu-btn .bar:nth-child(2) {
   width: 20px;
 }
+
 #menu-btn:checked ~ nav {
   opacity: 1;
   visibility: visible;
 }
+
 #menu-btn:checked ~ nav ul {
   top: 300px;
 }
+
 #menu-btn:checked ~ nav ul li {
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
+
 #menu-btn:checked ~ nav ul li:nth-child(1) {
   -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
   transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
 }
+
 #menu-btn:checked ~ nav ul li:nth-child(2) {
   -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
   transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
 }
+
 #menu-btn:checked ~ nav ul li:nth-child(3) {
   -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
   transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
 }
+
 #menu-btn:checked ~ nav ul li:nth-child(4) {
   -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
   transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
 }
+
 #menu-btn:checked + label.menu-btn .bar {
-  background-color: rgb(242, 255, 57);
+  background-color: #f2ff39;
 }
+
 #menu-btn:checked + label.menu-btn .bar:nth-child(2) {
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
   opacity: 0;
 }
+
 #menu-btn:checked + label.menu-btn .bar:nth-child(1) {
   -webkit-transform: translateY(10px) rotate(45deg);
-          transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
+
 #menu-btn:checked + label.menu-btn .bar:nth-child(3) {
   -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
-
 
 /* 關於我們 */
-#about-content{
-height: 2160px;
+#about-banner {
+  width: 100%;
+  height:500px;
+  background-image: url("./img/BANNER.jpg");
+  background-attachment: fixed;
+  background-position: center;
 }
 
-#about-content>div {
-  background: #fff;
-  text-align: center;
+  #about-contents {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#about-content h3, p{
-  text-align: center;
-  padding: 10px;
+#about-contents #about-left {
+    height: 500px;
+    background-image: url("./img/apple.jpg");
+    background-size: cover;
 }
 
-#about-content h3 {
- font-size: 50px;
+#about-contents #about-right h3, #about-contents #about-right hr, #about-contents #about-right p {
+  padding-left: 60px;
 }
 
-#about-content p {
-  line-height: 3;
-  padding: 15px;
-}
-
-#about-content-1{
-  height: 500px;
-  background: rgb(48, 190, 255);
-  }
-  
