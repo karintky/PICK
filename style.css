@@ -261,6 +261,7 @@ footer p {
 .map{
 padding-left: 250px;
 padding-top: 100px;
+padding-bottom: 100px;
  }
 
  .contact-details p{
@@ -281,4 +282,36 @@ padding-top: 100px;
   width: 500px;
  margin-left: 90px;
   margin-top: 10px;
+}
+
+.form {
+	display: block;
+	line-height: 26px;
+}
+.form p:first-child {
+	margin-bottom: 10px;
+}
+.form input[type="text"], 
+.form input[type="email"],
+.form textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.form textarea {
+	width: 50%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.form input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #4e4e4e;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
 }
