@@ -1,0 +1,88 @@
+* {
+  font-family: 微軟正黑體;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  .container {
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    top: 300px;
+    display: flex;
+  }
+  
+  .card1,.card2,.card3,.card4,.card5,.card6,.card7 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    position: relative;
+  }
+  
+
+  .card1 {
+    background-color: #8a000b;
+  }
+  .card2 {
+    background-color: #fa9107;
+  }
+  .card3 {
+    background-color: #fffb26;
+  }
+  .card4 {
+    background-color: #5aa800;
+  }
+  .card5 {
+    background-color: #1b5f00;
+  }
+  .card6 {
+    background-color: #154cff;
+  }
+  .card7 {
+    background-color: #4d008b;
+  }
+
+
+  .card1:not(:first-child),
+  .card2:not(:first-child),
+  .card3:not(:first-child),
+  .card4:not(:first-child),
+  .card5:not(:first-child),
+  .card6:not(:first-child),
+  .card7:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card1:hover,
+  .card2:hover,
+  .card3:hover,
+  .card4:hover,
+  .card5:hover,
+  .card6:hover,
+  .card7:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card1:hover ~ .card1,
+  .card2:hover ~ .card2,
+  .card3:hover ~ .card3,
+  .card4:hover ~ .card4,
+  .card5:hover ~ .card5,
+  .card6:hover ~ .card6,
+  .card7:hover ~ .card7 {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }

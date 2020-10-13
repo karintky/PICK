@@ -295,7 +295,7 @@ padding-bottom: 100px;
 .form input[type="text"], 
 .form input[type="email"],
 .form textarea {
-    padding: 20px 43px;
+    padding: 20px 67px 20px 20px;
     border: 0;
     background: #EDEDED;
     margin: 6px 10px;
