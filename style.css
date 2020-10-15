@@ -30,6 +30,7 @@ nav {
   height: 100vh;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 /* 菜單選項 */
@@ -241,6 +242,7 @@ footer p {
   height: 100vh;
 }
 
+/* 水果產品LOGO */
 .contact-logo img{
   width: 150px;
     height: 150px;
@@ -321,4 +323,111 @@ padding-bottom: 100px;
 .form input[type="submit"]:hover{
   background: #e2e2e2;
   color: #000;
+}
+
+
+/* 水果產品 */
+.contact-logo{
+  width: 100%;
+  height: 213px;
+}
+.contact-logo img {
+  width: 130px;
+  height: 130px;
+  margin: 50px 70px;
+  position: fixed;
+}
+
+.container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+}
+
+.red,.orange,.yellow,.green,.blue,.green2,.purple{
+  display: flex;
+  height: 724px;
+  width: 100%;
+  border-radius: 30px 0px 0px 0px;
+  transition: 0.4s ease-out;
+  position: relative;
+  cursor:pointer;
+}
+
+.hlg, .banana, .juzi, .siga, .kiwi, .lanmei, .grape{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+ background-position: center;
+}
+
+.banana{
+  background-image: url("./img/banana.png");
+}
+.hlg{
+  background-image: url("./img/dragonfruit-b.png");
+}
+.siga{
+  background-image: url("./img/siga.png");
+}
+
+.red:not(:first-child),
+.orange:not(:first-child),
+.yellow:not(:first-child),
+.green:not(:first-child),
+.blue:not(:first-child),
+.green2:not(:first-child),
+.purple:not(:first-child) {
+    margin-left: -50px;
+}
+
+.red:hover,
+.orange:hover,
+.yellow:hover,
+.green:hover,
+.blue:hover,
+.green2:hover,
+.purple:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.red:hover ~ .red,
+.orange:hover ~ .orange,
+.yellow:hover ~ .yellow,
+.green:hover ~ .green,
+.blue:hover ~ .blue,
+.green2:hover ~ .green2,
+.purple:hover ~ .purple {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.red{
+  background-color:#BA243D;
+}
+
+.orange{
+background-color:#FF7A45;
+}
+
+.yellow{
+  background-color:#FFED54;
+}
+
+.green{
+  background-color: #a1d154;
+  }
+.green2{
+  background-color:#7ec554;
+}
+
+.blue{
+background-color: #69CCFF;
+}
+
+.purple{
+background-color: #CA8BEB;
 }
