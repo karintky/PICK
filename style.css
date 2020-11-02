@@ -502,12 +502,13 @@ align-items: center;
 #month h2, #place h2{
   font-size: 40px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 #month p, #place p{
   text-align: center;
   font-size: 35px;
+  line-height: normal;
 }
   
 #choose-box{
@@ -530,3 +531,68 @@ align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   color: #e2e2e2;
   }
+
+  /* illegal */
+
+#illegal-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 400px;
+  background-color:#ff4848;
+}
+
+
+.button{
+  background:  #ff7373;
+  box-shadow: rgba(0,0,0,0.3);
+  font-size: 20px;
+  margin: 75px auto 0;
+  text-align:center;
+  display:block;
+  width: 300px;
+  border-radius:5px;
+  padding: 30px 50px;
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+  }
+
+  .reason-box{
+    z-index:1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 200px 0;
+    z-index: 1;
+  }
+  
+  .reason{
+    background:#eee;
+    padding: 100px 50px;
+    width: 500px;
+    margin: 0 auto;
+    text-align:center;
+    border-radius:5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      width: 400px;
+      margin: 0 auto;
+    cursor:default;
+    }
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
