@@ -569,7 +569,6 @@ line-height: 50px;
   }
 
   .reason-box{
-    z-index:1;
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
@@ -580,7 +579,7 @@ line-height: 50px;
     z-index: 1;
   }
   
-  .reason{
+  #reason1{
     background:#eee;
     padding: 100px 50px;
     width: 500px;
