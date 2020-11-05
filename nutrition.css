@@ -1,3 +1,10 @@
+* {
+    font-family: 微軟正黑體;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .container-fruit {
     height: 100vh;
     width: 100%;
@@ -30,7 +37,7 @@
 .grape {
     background-repeat: no-repeat;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .container-fruit a {
@@ -43,13 +50,13 @@
 }
 
 .hlg h2{
-    color: tomato;
+    color:#BA243D;
 }
 .juzi h2{
     color: #FF7A45;
 }
 .banana h2{
-    color:#FFED54;
+    color:#FFDC00;
 }
 .siga h2{
     color:#8fc43a;
@@ -72,14 +79,16 @@
 .kiwi ul,
 .lanmei ul,
 .grape ul {
-    padding-top: 50px;
+    padding-top: 20px;
     color: #8f8f8f;
-    line-height: 30px;
+    line-height: 52px;
+    padding-left: 50px;
+    font-weight: bold;
 
 }
 
 .hlg ul span {
-    color: tomato;
+    color: #BA243D;
 }
 
 .juzi ul span {
@@ -87,7 +96,7 @@
 }
 
 .banana ul span {
-    color: rgb(255, 208, 0);
+    color:#FFDC00;
 }
 
 .siga ul span {
