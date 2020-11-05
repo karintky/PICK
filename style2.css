@@ -1,0 +1,141 @@
+.container-fruit {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.red,
+.orange,
+.yellow,
+.green,
+.blue,
+.green2,
+.purple {
+    background-color: white;
+    box-shadow: -8px 0px 30px #dfdfdf;
+    width: 100%;
+    border-radius: 0px 30px 0px 0px;
+    transition: 0.4s ease-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.hlg,
+.banana,
+.juzi,
+.siga,
+.kiwi,
+.lanmei,
+.grape {
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container-fruit a {
+    text-decoration: none;
+}
+
+.hlg ul,
+.juzi ul,
+.banana ul,
+.siga ul,
+.kiwi ul,
+.lanmei ul,
+.grape ul {
+    padding-top: 150px;
+    color: #8f8f8f;
+    line-height: 22px;
+
+}
+
+.hlg ul span {
+    color: tomato;
+}
+
+.juzi ul span {
+    color:rgb(255, 123, 0);
+}
+
+.banana ul span {
+    color: rgb(255, 208, 0);
+}
+
+.siga ul span {
+    color:rgb(79, 206, 21);
+}
+
+.kiwi ul span {
+    color: rgb(136, 184, 64);
+}
+
+.lanmei ul span {
+    color: blue;
+}
+
+.grape ul span {
+    color:blueviolet;
+}
+
+
+.banana {
+    background-image: url("./img/banana-s.png");
+
+}
+
+.juzi {
+    background-image: url("./img/orange-s.png");
+}
+
+.hlg {
+    background-image: url("./img/hlg-s.png");
+}
+
+.siga {
+    background-image: url("./img/siga-s.png");
+}
+
+.lanmei {
+    background-image: url("./img/lanmei-s.png");
+}
+
+.kiwi {
+    background-image: url("./img/kiwi-s.png");
+}
+
+.grape {
+    background-image: url("./img/grape-s.png");
+}
+
+.red:not(:first-child),
+.orange:not(:first-child),
+.yellow:not(:first-child),
+.green:not(:first-child),
+.blue:not(:first-child),
+.green2:not(:first-child),
+.purple:not(:first-child) {
+    margin-left: -5px;
+}
+
+.red:hover,
+.orange:hover,
+.yellow:hover,
+.green:hover,
+.blue:hover,
+.green2:hover,
+.purple:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.red:hover~.red,
+.orange:hover~.orange,
+.yellow:hover~.yellow,
+.green:hover~.green,
+.blue:hover~.blue,
+.green2:hover~.green2,
+.purple:hover~.purple {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
