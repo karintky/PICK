@@ -81,7 +81,7 @@
 .grape ul {
     padding-top: 20px;
     color: #8f8f8f;
-    line-height: 52px;
+    line-height: 40px;
     padding-left: 50px;
     font-weight: bold;
 
@@ -89,6 +89,7 @@
 
 .hlg ul span {
     color: #BA243D;
+
 }
 
 .juzi ul span {

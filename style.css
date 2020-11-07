@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 
 * {
-  font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Sans TC', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -164,7 +164,7 @@ nav ul li a:hover {
 }
 
 #aboutUS-content h3,
-p {
+#aboutUS-content p {
   padding: 30px 60px;
   font-size: 20px;
   font-weight: lighter;
@@ -173,7 +173,7 @@ p {
 }
 
 #contactUS-content h3,
-p {
+#contactUS-content p {
   padding: 50px 60px;
 }
 
@@ -492,14 +492,7 @@ footer p {
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-#d-intro {
-  background: #FCAA86;
-}
-
-#o-intro {
-  background: orange;
+  background:white;
 }
 
 
@@ -543,6 +536,7 @@ footer p {
   font-size: 80px;
   padding-left: 50px;
   font-weight: 700;
+  color:#BA243D;
 }
 
 .d-content p,
@@ -552,7 +546,58 @@ footer p {
 .k-content p,
 .g-content p,
 .l-content p {
-  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 50px 50px;
+  text-align: justify;
+  color: #4e4e4e;
+}
+
+
+
+#d-good{
+  width: 100%;
+  height: 600px;
+  background:#fff;
+  ;
+  color:#BA243D;
+}
+
+#good-title h2{
+  font-size: 50px;
+  padding-top: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#good-title p{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 20px ;
+  padding-bottom: 60px;
+}
+
+#d-goodcontent{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.goodcontent-1 ul, .goodcontent-2 ul{
+  padding-left: 80px;
+  font-size: 20px;
+line-height: 40px;
+}
+
+.goodcontent-1 li, .goodcontent-2 li{
+  color: #4e4e4e;
+  font-weight: bold;
+}
+
+
+.goodcontent-1 p, .goodcontent-2 p{
+  font-size: 15px;
+  text-align: justify;
+  padding-bottom:25px;
 }
 
 /* 水果產季和地方 */
@@ -565,51 +610,48 @@ footer p {
 #l-info {
   width: 100%;
   height: 400px;
-  background: rgb(255, 242, 242);
   display: grid;
-  grid-template-columns: 45% 10% 45%;
-  align-items: center;
-}
-
-#d-good{
-  width: 100%;
-  height: 600px;
-  background: rgba(255, 60, 60, 0.726);
-  color: white;
-}
-
-#d-good h2{
+  grid-template-columns: 30% 70%;
   text-align: center;
+  column-gap: 10px;
 }
 
-
-
-
-#d-center,
-#o-center,
-#b-center,
-#s-center,
-#k-center,
-#g-center,
-#l-center {
-  width: 3px;
+#month img{
   height: 150px;
-  background-color: teal;
-  margin: 60px 50px;
+  width: 150px;
+  margin-top: 50px;
+}
+
+#month{
+  background-color: #BA243D;
+  height: 400px;
 }
 
 #month h2,
 #place h2 {
   font-size: 40px;
   text-align: center;
-  padding-top: 30px;
+  color:white;
 }
 
-#month p,
-#place p {
+#place h2 {
+  font-size: 40px;
   text-align: center;
+  color:#BA243D;
+}
+
+#month p, #place p {
+  text-align: center;
+  padding-top: 20px;
   font-size: 25px;
-  line-height: normal;
+}
+
+#month p{
+  color:white;
+}
+
+#place p {
+  color: #4e4e4e;
 }
 
 /* 如何挑選水果 */
@@ -625,7 +667,7 @@ footer p {
 }
 
 #d-choose {
-  background: rgb(255, 110, 110);
+  background: white;
 }
 
 
@@ -640,7 +682,7 @@ footer p {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  color: white;
+  color:#BA243D;
 }
 
 #d-choose-box,
@@ -654,7 +696,7 @@ footer p {
   height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: #e2e2e2;
+  color:#BA243D;
 }
 
 /* 禁忌 */
@@ -670,7 +712,7 @@ footer p {
 }
 
 #d-bad {
-  background-color: #ff4848;
+  background-color: #fff;
 }
 
 #d-bad-title h3,
@@ -682,7 +724,7 @@ footer p {
 #l-bad-title h3 {
   text-align: center;
   padding: 50px 100px;
-  color: white;
+  color:#BA243D;
   font-weight: normal;
   line-height: 50px;
 
@@ -719,7 +761,7 @@ footer p {
 }
 
 #d-bad-box .button{
-  background: #ff7373;
+  background: #BA243D;
 }
 
 .d-reason-box,
@@ -746,7 +788,7 @@ footer p {
 #s-reason1,#s-reason2,#s-reason3,#s-reason4,
 #g-reason1,#g-reason2,#g-reason3,#g-reason4,
 #k-reason1,#k-reason2,#k-reason3,#k-reason4{ 
-  background: #eee;
+  background: white;
   padding: 100px 50px;
   width: 500px;
   margin: 0 auto;
@@ -771,10 +813,11 @@ footer p {
   width: 100%;
   height: 250px;
   color: white;
+  text-align: center;
 }
 
 #d-nutrition{
-  background-color: #ff7373;
+  background-color: #BA243D;
 }
 
 
@@ -785,9 +828,8 @@ footer p {
 #g-nutrition h2,
 #b-nutrition h2,
 #l-nutrition h2{
-  text-align: center;
   font-size: 50px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #d-nutrition p,
@@ -800,22 +842,36 @@ footer p {
   text-align: center;
   font-size: 15px;
   padding-top: 20px;
+  padding-bottom: 45px;
+  letter-spacing: 3px;
+  padding-left: 3px ;
 }
 
-#d-nutrition .a-btn,
-#o-nutrition .a-btn,
-#s-nutrition .a-btn,
-#k-nutrition p.a-btn,
-#g-nutrition .a-btn,
-#b-nutrition .a-btn,
-#l-nutrition .a-btn {
-  background-color: #fff;
-  margin: 44%;
-  padding: 15px 30px;
+.d-btn a {
+  padding: 10px 10px;
   text-decoration: none;
-  color: #555555;
+  color:white;
   border-radius: 5px;
+  border: 2px solid white;
   font-size: 18px;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.d-btn a:hover {
+  color: #BA243D;
+  background: white;
+}
+.d-btn a span {
+  opacity: 0;
+  padding-left: 5px; 
+  padding-right: 5px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+.d-btn a:hover span {
+  opacity: 1;
+  padding-left: 10px; 
+  padding-right: 10px;
+  color: #BDB9AB;
 }
