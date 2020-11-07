@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+
 * {
-  font-family: 微軟正黑體;
+  font-family: 'Noto Serif TC', serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -477,7 +480,7 @@ footer p {
 }
 
 
-/* 水果介紹 */
+/* 水果介紹區塊 */
 #d-intro,
 #o-intro,
 #b-intro,
@@ -500,7 +503,7 @@ footer p {
 }
 
 
-
+/* 水果介紹照片 */
 #d-pic,
 #o-pic,
 #b-pic,
@@ -517,6 +520,7 @@ footer p {
   background-color: #FC624C;
 }
 
+/* 水果介紹内容 */
 .d-content,
 .o-content,
 .b-content,
@@ -528,6 +532,7 @@ footer p {
   margin-top: 80px;
 }
 
+/* 水果標題 */
 .d-content h1,
 .o-content h1,
 .b-content h1,
@@ -537,6 +542,7 @@ footer p {
 .l-content h1 {
   font-size: 80px;
   padding-left: 50px;
+  font-weight: 700;
 }
 
 .d-content p,
@@ -549,6 +555,7 @@ footer p {
   font-weight: normal;
 }
 
+/* 水果產季和地方 */
 #d-info,
 #o-info,
 #b-info,
@@ -563,6 +570,20 @@ footer p {
   grid-template-columns: 45% 10% 45%;
   align-items: center;
 }
+
+#d-good{
+  width: 100%;
+  height: 600px;
+  background: rgba(255, 60, 60, 0.726);
+  color: white;
+}
+
+#d-good h2{
+  text-align: center;
+}
+
+
+
 
 #d-center,
 #o-center,
@@ -591,6 +612,7 @@ footer p {
   line-height: normal;
 }
 
+/* 如何挑選水果 */
 #d-choose,
 #o-choose,
 #b-choose,
@@ -599,6 +621,7 @@ footer p {
 #g-choose,
 #l-choose {
   width: 100%;
+  height: 600px;
 }
 
 #d-choose {
@@ -634,30 +657,29 @@ footer p {
   color: #e2e2e2;
 }
 
-/* illegal */
-
-#d-illegal,
-#o-illegal,
-#b-illegal,
-#s-illegal,
-#k-illegal,
-#g-illegal,
-#l-illegal {
+/* 禁忌 */
+#d-bad,
+#o-bad,
+#b-bad,
+#s-bad,
+#k-bad,
+#l-bad
+#g-bad{
   width: 100%;
   height: 500px;
 }
 
-#d-illegal {
+#d-bad {
   background-color: #ff4848;
 }
 
-#d-illegal-title h3,
-#o-illegal-title h3,
-#b-illegal-title h3,
-#s-illegal-title h3,
-#k-illegal-title h3,
-#g-illegal-title h3,
-#l-illegal-title h3 {
+#d-bad-title h3,
+#o-bad-title h3,
+#b-bad-title h3,
+#s-bad-title h3,
+#k-bad-title h3,
+#g-bad-title h3,
+#l-bad-title h3 {
   text-align: center;
   padding: 50px 100px;
   color: white;
@@ -666,25 +688,25 @@ footer p {
 
 }
 
-#d-illegal-box,
-#o-illegal-box,
-#b-illegal-box,
-#s-illegal-box,
-#k-illegal-box,
-#g-illegal-box,
-#l-illegal-box {
+#d-bad-box,
+#o-bad-box,
+#b-bad-box,
+#s-bad-box,
+#k-bad-box,
+#g-bad-box,
+#l-bad-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-#d-illegal-box .button,
-#o-illegal-box .button,
-#b-illegal-box .button,
-#s-illegal-box .button,
-#k-illegal-box .button,
-#g-illegal-box .button,
-#l-illegal-box .button{
+#d-bad-box .button,
+#o-bad-box .button,
+#b-bad-box .button,
+#s-bad-box .button,
+#k-bad-box .button,
+#g-bad-box .button,
+#l-bad-box .button{
   width: 300px;
   font-size: 20px;
   margin: 8px auto 50px;
@@ -696,17 +718,17 @@ footer p {
   cursor: pointer;
 }
 
-#d-illegal-box .button{
+#d-bad-box .button{
   background: #ff7373;
 }
 
-/* .d-reason-box,
+.d-reason-box,
 .o-reason-box,
 .b-reason-box,
 .k-reason-box,
 .s-reason-box,
 .g-reason-box,
-.l-reason-box { */
+.l-reason-box { 
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -717,13 +739,13 @@ footer p {
   z-index: 1;
 }
 
-/* #d-reason1,#d-reason2,#d-reason3,#d-reason4,
+ #d-reason1,#d-reason2,#d-reason3,#d-reason4,
 #o-reason1,#o-reason2,#o-reason3,#o-reason4,
 #l-reason1,#l-reason2,#l-reason3,#l-reason4,
 #b-reason1,#b-reason2,#b-reason3,#b-reason4,
 #s-reason1,#s-reason2,#s-reason3,#s-reason4,
 #g-reason1,#g-reason2,#g-reason3,#g-reason4,
-#k-reason1,#k-reason2,#k-reason3,#k-reason4{ */
+#k-reason1,#k-reason2,#k-reason3,#k-reason4{ 
   background: #eee;
   padding: 100px 50px;
   width: 500px;
@@ -738,7 +760,7 @@ footer p {
 }
 
 
-/* nutrition */
+/* 營養成分*/
 #d-nutrition,
 #o-nutrition,
 #s-nutrition,
@@ -747,7 +769,7 @@ footer p {
 #b-nutrition,
 #l-nutrition {
   width: 100%;
-  height: 300px;
+  height: 250px;
   color: white;
 }
 
@@ -756,16 +778,16 @@ footer p {
 }
 
 
-#d-nutrition h1,
-#o-nutrition h1,
-#s-nutrition h1,
-#k-nutrition h1,
-#g-nutrition h1,
-#b-nutrition h1,
-#l-nutrition h1{
+#d-nutrition h2,
+#o-nutrition h2,
+#s-nutrition h2,
+#k-nutrition h2,
+#g-nutrition h2,
+#b-nutrition h2,
+#l-nutrition h2{
   text-align: center;
   font-size: 50px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #d-nutrition p,
@@ -776,7 +798,7 @@ footer p {
 #b-nutrition p,
 #l-nutrition p {
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   padding-top: 20px;
 }
 
