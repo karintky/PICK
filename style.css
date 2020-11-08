@@ -575,6 +575,7 @@ footer p {
   font-size: 15px;
   padding-top: 20px ;
   padding-bottom: 60px;
+  color: #4e4e4e;
 }
 
 #d-goodcontent{
@@ -664,12 +665,21 @@ line-height: 40px;
 #l-choose {
   width: 100%;
   height: 600px;
+  text-align: center;
+}
+
+#d-choose-box img{
+  width: 80px;
+  height: 80px;
 }
 
 #d-choose {
   background: white;
 }
 
+#d-choose h2{
+  padding-top: 30px;
+}
 
 #d-choose h1,
 #o-choose h1,
@@ -684,6 +694,17 @@ line-height: 40px;
   padding-bottom: 50px;
   color:#BA243D;
 }
+
+#d-choose-box p{
+  color: #4e4e4e;
+  padding-top: 30px;
+  line-height: 10px;
+}
+
+
+
+
+
 
 #d-choose-box,
 #o-choose-box,
@@ -725,7 +746,7 @@ line-height: 40px;
   text-align: center;
   padding: 50px 100px;
   color:#BA243D;
-  font-weight: normal;
+  font-weight: bolder;
   line-height: 50px;
 
 }
