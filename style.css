@@ -497,7 +497,7 @@ footer p {
 
 
 /* 水果介紹照片 */
-#b-intro img{
+#d-intro img , #b-intro img, #o-intro img, #k-intro img{
 margin-left:80px;
 margin-top: 50px;
 width: 800px;
