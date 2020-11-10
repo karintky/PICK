@@ -1,15 +1,30 @@
-$("#reason1").slideUp(0);
 $(".reason-box").fadeOut(0);
-
-$("#illegal-1").click(function() {
-  $("#reason1").slideDown(400);
-  $(".reason-box").fadeIn(400);
-  $(".box").fadeIn("fast");
+$(".reason").each(function () {
+  $(this).fadeOut(0);
 });
 
-// $(".reason-box").click(function() {
-//  $(".reason1").slideUp(300);
-// $(".reason-box").fadeOut(300);
-// }).children().click(function() {
-//   return false;
-// });
+$(".reason-box").click(function () {
+  $(".reason-box").fadeOut(300);
+}).children().click(function () {
+  return false;
+});
+
+$(".reason-box").each(function () {
+  $(this).click(function () {
+    var show = $(this).attr("reason");
+    $(".reason-box").fadeOut(300);
+    return false;
+  });
+})
+
+
+$(".button").each(function () {
+  $(this).click(function () {
+    var show = $(this).attr("data-show");
+    $(".reason").each(function() {
+      $(this).fadeOut(0);
+    });
+    $(".reason-box").fadeIn(600);
+    $(show).fadeIn(600);
+  })
+})
