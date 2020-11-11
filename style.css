@@ -606,7 +606,8 @@ line-height: 40px;
 #k-info,
 #g-info,
 #l-info {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   height: 400px;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -615,9 +616,9 @@ line-height: 40px;
 }
 
 #month img{
-  height: 150px;
-  width: 150px;
-  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
 }
 
 #month{
@@ -630,6 +631,7 @@ line-height: 40px;
   font-size: 40px;
   text-align: center;
   color:white;
+  padding-top: 50px;
 }
 
 #place h2 {
@@ -641,15 +643,18 @@ line-height: 40px;
 #month p, #place p {
   text-align: center;
   padding-top: 20px;
-  font-size: 25px;
 }
 
 #month p{
   color:white;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 #place p {
   color: #4e4e4e;
+  font-size: 60px;
+  line-height: 80px;
 }
 
 /* 如何挑選水果 */
