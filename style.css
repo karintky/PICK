@@ -548,22 +548,22 @@ width: 800px;
 
 #d-good{
   width: 100%;
-  height: 600px;
+  height: 800px;
   background:#fff;
   color:#BA243D;
 }
 
 #good-title h2{
-  font-size: 50px;
-  padding-top: 50px;
+  font-size: 65px;
+  padding-top: 150px;
   font-weight: bolder;
   text-align: center;
 }
 
 #good-title p{
   text-align: center;
-  font-size: 15px;
-  padding-top: 20px ;
+  font-size: 20px;
+  padding-top: 50px ;
   padding-bottom: 60px;
   color: #4e4e4e;
 }
@@ -621,9 +621,13 @@ line-height: 40px;
   margin-top: 20px;
 }
 
-#month{
-  background-color: #BA243D;
+#month, #place{
   height: 400px;
+}
+
+#place{
+  background: #fff;
+  border: 5px solid #BA243D;
 }
 
 #month h2,
@@ -653,7 +657,7 @@ line-height: 40px;
 
 #place p {
   color: #4e4e4e;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 80px;
 }
 
@@ -751,18 +755,17 @@ line-height: 40px;
 
 #bad-box{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
 #bad-box .button {
   width: 300px;
   font-size: 20px;
-  margin: 8px auto 50px;
+  margin: 20px auto 50px;
   text-align: center;
-  display: block;
   border-radius: 5px;
-  padding: 20px 50px;
+  padding: 20px 10px;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
@@ -786,11 +789,16 @@ line-height: 40px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  width: 400px;
-  margin: 0 auto;
   cursor: default;
 }
+
+#reason1 h4,#reason2 h4,#reason3 h4,#reason4 h4{
+  line-height:40px;
+  font-size: 20px;
+  text-align: justify;
+  color: #4e4e4e;
+} 
+
 
 
 /* 營養成分*/
