@@ -767,7 +767,9 @@ line-height: 40px;
   border-radius: 5px;
   padding: 20px 10px;
   color: rgb(255, 255, 255);
+  transition:0.4s;
   cursor: pointer;
+  border:none;
 }
 
 .reason-box { 
@@ -857,7 +859,8 @@ line-height: 40px;
   cursor: pointer;
 }
 
-.d-btn a:hover {
+
+.d-btn a:hover{
   color: #BA243D;
   background: white;
 }
