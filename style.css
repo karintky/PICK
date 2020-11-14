@@ -548,43 +548,40 @@ width: 800px;
 
 #d-good{
   width: 100%;
-  height: 800px;
+  height: 700px;
   background:#fff;
   color:#BA243D;
 }
 
 #good-title h2{
   font-size: 65px;
-  padding-top: 150px;
+  padding-top: 50px;
   font-weight: bolder;
   text-align: center;
 }
 
 #good-title p{
   text-align: center;
-  font-size: 20px;
-  padding-top: 50px ;
-  padding-bottom: 60px;
+  font-size: 23px;
+  padding: 30px;
   color: #4e4e4e;
 }
 
 #d-goodcontent{
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 10% 40% 40% 10%;
+background-repeat: no-repeat;
+background-position: right 0 bottom 5%;
 }
 
 .goodcontent-1 ul, .goodcontent-2 ul{
-  font-size: 20px;
+  font-size: 23px;
 line-height: 40px;
 }
 
-.goodcontent-1 ul{
-  padding-left: 400px;
+.goodcontent-1 ,.goodcontent-2{
+  padding-left: 200px;
 }
-.goodcontent-2 ul{
-  padding-left: 120px;
-}
-
 
 .goodcontent-1 li, .goodcontent-2 li{
   color: #4e4e4e;
@@ -593,22 +590,20 @@ line-height: 40px;
 
 
 .goodcontent-1 p, .goodcontent-2 p{
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
   padding-bottom:25px;
 }
 
+.goodcontent-2 img{
+  margin-top: 10px;
+}
+
 /* 水果產季和地方 */
-#d-info,
-#o-info,
-#b-info,
-#s-info,
-#k-info,
-#g-info,
-#l-info {
+#info {
   width: 1200px;
   margin: 0 auto;
-  height: 400px;
+  height: 450px;
   display: grid;
   grid-template-columns: 30% 70%;
   text-align: center;
@@ -627,7 +622,6 @@ line-height: 40px;
 
 #place{
   background: #fff;
-  border: 5px solid #BA243D;
 }
 
 #month h2,
@@ -636,12 +630,6 @@ line-height: 40px;
   text-align: center;
   color:white;
   padding-top: 50px;
-}
-
-#place h2 {
-  font-size: 40px;
-  text-align: center;
-  color:#BA243D;
 }
 
 #month p, #place p {
@@ -661,96 +649,72 @@ line-height: 40px;
   line-height: 80px;
 }
 
-/* 如何挑選水果 */
-#d-choose,
-#o-choose,
-#b-choose,
-#s-choose,
-#k-choose,
-#g-choose,
-#l-choose {
+/* 選購指南 */
+#choose{
   width: 100%;
   height: 600px;
   text-align: center;
-}
-
-#d-choose-box img{
-  width: 80px;
-  height: 80px;
-}
-
-#d-choose {
   background: white;
 }
 
-#d-choose h2{
-  padding-top: 30px;
+#choose h1{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  font-size:65px;
 }
 
-#d-choose h1,
-#o-choose h1,
-#b-choose h1,
-#s-choose h1,
-#k-choose h1,
-#g-choose h1,
-#l-choose h1 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color:#BA243D;
-}
-
-#d-choose-box p{
-  color: #4e4e4e;
-  padding-top: 30px;
-  line-height: 10px;
-}
-
-
-#d-choose-box,
-#o-choose-box,
-#b-choose-box,
-#s-choose-box,
-#k-choose-box,
-#g-choose-box,
-#l-choose-box {
-  width: 100%;
-  height: 300px;
+#choose-grid {
+  margin:0 auto;
+  width: 1500px;
+  height: 350px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  color:#BA243D;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-gap: 10px;
 }
 
-/* 禁忌 */
-#d-bad,
-#o-bad,
-#b-bad,
-#s-bad,
-#k-bad,
-#l-bad
-#g-bad{
+#choose-grid img{
+  width: 120px;
+  height: 120px;
+  padding-top:30px;
+  object-fit: contain;
+}
+
+#see,#touch,#smell,#hear{
+  background-color: #BA243D20;
+}
+
+#choose h2{
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+
+#choose-grid p{
+  color: #4e4e4e;
+  font-size: 23px;
+  padding-top: 30px;
+  line-height: 5px;
+}
+
+
+/* 注意事項 */
+#bad{
   width: 100%;
-  height: 500px;
-}
-
-#d-bad {
+  height: 700px;
   background-color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: left 10% bottom 20%;
 }
 
-#d-bad-title h3,
-#o-bad-title h3,
-#b-bad-title h3,
-#s-bad-title h3,
-#k-bad-title h3,
-#g-bad-title h3,
-#l-bad-title h3 {
-  text-align: center;
-  padding: 50px 100px;
-  color:#BA243D;
-  font-weight: bolder;
-  line-height: 50px;
+#bad-title h1{
+  font-size: 65px;
+  padding: 50px;
+}
 
+#bad-title p{
+  font-size: 23px;
+  padding-bottom: 50px;
 }
 
 #bad-box{
@@ -761,15 +725,15 @@ line-height: 40px;
 
 #bad-box .button {
   width: 300px;
-  font-size: 20px;
-  margin: 20px auto 50px;
-  text-align: center;
+  font-size: 25px;
+  margin: 40px auto;
   border-radius: 5px;
   padding: 20px 10px;
-  color: rgb(255, 255, 255);
+  color:white;
   transition:0.4s;
   cursor: pointer;
   border:none;
+  box-shadow: 5px 5px 10px #bdbdbd;
 }
 
 .reason-box { 
@@ -804,57 +768,33 @@ line-height: 40px;
 
 
 /* 營養成分*/
-#d-nutrition,
-#o-nutrition,
-#s-nutrition,
-#k-nutrition,
-#g-nutrition,
-#b-nutrition,
-#l-nutrition {
+#nutrition {
   width: 100%;
   height: 400px;
   color: white;
   text-align: center;
 }
 
-#d-nutrition{
-  background-color: #BA243D;
+#nutrition h1{
+  font-size: 65px;
+  padding-top: 50px;
 }
 
-
-#d-nutrition h2,
-#o-nutrition h2,
-#s-nutrition h2,
-#k-nutrition h2,
-#g-nutrition h2,
-#b-nutrition h2,
-#l-nutrition h2{
-  font-size: 50px;
-  padding-top: 80px;
-}
-
-#d-nutrition p,
-#o-nutrition p,
-#s-nutrition p,
-#k-nutrition p,
-#g-nutrition p,
-#b-nutrition p,
-#l-nutrition p {
-  text-align: center;
-  font-size: 15px;
-  padding-top: 30px;
-  padding-bottom: 60px;
+#nutrition p {
+  font-size: 23px;
+  padding-top:40px;
+  padding-bottom: 75px;
   letter-spacing: 3px;
   padding-left: 3px ;
 }
 
 .d-btn a {
-  padding: 10px 10px;
+  padding: 20px 20px;
   text-decoration: none;
   color:white;
   border-radius: 5px;
   border: 2px solid white;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.5s;
   cursor: pointer;
 }
