@@ -544,7 +544,7 @@ footer p {
   color: #4e4e4e;
 }
 
-#d-goodcontent {
+#goodcontent {
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
 }
