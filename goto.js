@@ -28,3 +28,10 @@ $(".button").each(function () {
     $(show).fadeIn(600);
   })
 })
+
+
+
+
+// index//
+
+$('.carousel').carousel();
