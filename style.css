@@ -158,7 +158,7 @@ nav ul li a:hover {
 
 #aboutUS-pic{
   background-image: url("./img/ppl1.png");
-  width: 674px;
+  width: 500px;
   height: 500px;
   background-size: cover;
 }
@@ -226,7 +226,7 @@ footer #box2 {
   text-align: center;
   letter-spacing: 30px;
   padding-left: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
   color: rgb(219, 219, 219);
 }
 
@@ -258,11 +258,20 @@ footer p {
 }
 
 /* 水果產品LOGO */
-.contact-logo img {
-  width: 100px;
-  height: 100px;
-  margin: 30px 860px;
+
+.contact-logo {
+ height: 200px;
+ width: 100%;
+ text-align: center;
 }
+
+.contact-logo img {
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+ }
+
 
 .contact-logo hr {
   width: 100px;
@@ -273,7 +282,7 @@ footer p {
 #form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .map {
@@ -283,9 +292,9 @@ footer p {
 }
 
 .contact-details p {
-  display: block;
   line-height: 23pt;
   padding-bottom: 10px;
+  margin-top: 50px;
   margin-left: 35px;
   font-size: 12pt;
 }
@@ -296,16 +305,15 @@ footer p {
 }
 
 .contact-details hr {
-  width: 500px;
-  margin-left: 100px;
+  width:600px;
+  margin-left: 35px;
   margin-top: 5px;
 }
 
 .form {
   display: block;
-  line-height: 26px;
-  padding-left: 90px;
-  padding-top: 13px;
+  padding-left: 30px;
+  padding-top: 10px;
 
 }
 
@@ -314,14 +322,14 @@ footer p {
 .form textarea {
   padding: 20px 67px 20px 20px;
   border: 0;
-  background: #EDEDED;
+  background: #ececec;
   margin: 6px 10px;
 }
 
 .form textarea {
-  width: 500px;
+  width: 570px;
   display: block;
-  color: #666;
+  color:#4e4e4e;
   resize: none;
 }
 
