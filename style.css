@@ -11,12 +11,24 @@
 /* 首頁 */
 .index-logo img{
   background-attachment: fixed;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   margin: 50px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
+
+.carousel-caption img{
+align-items: center;
+width: 800px;
+height: 800px;
+}
+
+.carousel-caption h1{
+  padding-top: 10px;
+  font-size: 80px;
+}
+
 
 .carousel-fade .carousel-item {
   display: block;
@@ -122,6 +134,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ffe552;
+  text-decoration: none;
 }
 
 /* 菜單按鈕位置 */
