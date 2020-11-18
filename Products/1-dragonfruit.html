@@ -7,6 +7,7 @@
     <title>PICK</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/PICK-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -27,13 +28,13 @@
         <ul>
             <li><a href="../1-about.html"><span>01</span>認識我們</a></li>
             <li><a href="../2-products.html"><span>02</span>您的選擇</a></li>
-            <li><a href="../3-nutrition.html"><span>03</span>營養比例</a></li>
+            <li><a href="../3-nutrition.html"><span>03</span>成分比例</a></li>
             <li><a href="../4-contact.html"><span>04</span>聯絡我們</a></li>
     </nav>
 
     <!-- 水果特性 -->
     <div id="intro">
-        <img src="../img/hlg-intro.png" alt="">
+        <img src="../img/hlg-intro.png" alt="" data-aos="fade-right"  data-aos-duration="2000">
         <div class="content">
             <h1 style ="color:#BA243D">火龍果</h1>
             <p>火龍果又叫紅龍果、龍珠果，火龍果是仙人掌科植物，原產地在中美洲，有很高的經濟價值。它集「水果」、「花卉」、「蔬菜」、「保健」、「醫藥」為一體，稱之為無價之寶。在拉丁美洲傳統的祭典上，火龍果是必備的一種「神聖之果」。
@@ -84,13 +85,13 @@
 
     <!-- 水果產地和月份 -->
     <section id="info">
-        <div id="month" style="background-color: #BA243D">
+        <div id="month" style="background-color: #BA243D" data-aos="fade-right"  data-aos-duration="1000">
             <h2>月份</h2>
             <img src="../img/month.png" alt="">
             <p>盛產期</p>
             <p>6月 ~ 11月</p>
         </div>
-        <div id="place" style="border: 5px solid #BA243D">
+        <div id="place" style="border: 5px solid #BA243D" data-aos="fade-left"  data-aos-duration="1000">
             <h2 style="color:#BA243D">產地</h2>
             <p>彰化、屏東、南投</p>
             <p>台南、嘉義</p>
@@ -100,7 +101,7 @@
     <!-- 挑選水果 -->
     <section id="choose">
         <h1 style="color:#BA243D">選購指南</h1>
-        <div id="choose-grid">
+        <div id="choose-grid" data-aos="fade-up"  data-aos-duration="1000">
             <div id="see">
                 <img src="../img/chooseD.png" alt="">
                 <h2 style="color:#BA243D">顔色</h2>
@@ -173,7 +174,7 @@
     </section>
 
     <!-- 營養成分 -->
-    <section id="nutrition" style="background-color: #BA243D">
+    <section id="nutrition" style="background-color: #BA243D" data-aos="zoom-in" data-aos-duration="800">
         <h1>營養成分</h1>
         <p>水果含有豐富的營養，尤其是一些水果中所含的特殊營養物質，對人體健康很有好處，來看看這些健康水果成分吧！</p>
         <div class="d-btn">
@@ -185,6 +186,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js"></script>
+
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
 </body>

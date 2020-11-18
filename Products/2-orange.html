@@ -7,6 +7,7 @@
     <title>PICK</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/PICK-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -27,13 +28,13 @@
         <ul>
             <li><a href="../1-about.html"><span>01</span>認識我們</a></li>
             <li><a href="../2-products.html"><span>02</span>您的選擇</a></li>
-            <li><a href="../3-nutrition.html"><span>03</span>營養比例</a></li>
+            <li><a href="../3-nutrition.html"><span>03</span>成分比例</a></li>
             <li><a href="../4-contact.html"><span>04</span>聯絡我們</a></li>
     </nav>
 
     <!-- 水果特性 -->
     <div id="intro">
-        <img src="../img/orange-intro.png" alt="">
+        <img src="../img/orange-intro.png" alt="" data-aos="fade-right" data-aos-duration="1000">
         <div class="content">
             <h1 style="color:#FF7A45">柑橘</h1>
             <p>又名橘子、柑仔，是芸香科的果樹，原產地主要為中國南部以及印尼至印度東北部一帶的地區。
@@ -84,13 +85,13 @@
 
     <!-- 水果產地和月份 -->
     <section id="info">
-        <div id="month" style="background-color: #FF7A45">
+        <div id="month" style="background-color: #FF7A45" data-aos="fade-right"  data-aos-duration="1000">
             <h2>月份</h2>
             <img src="../img/month.png" alt="">
             <p>盛產期</p>
             <p>11月 ~ 隔年2月</p>
         </div>
-        <div id="place" style="border: 5px solid #FF7A45">
+        <div id="place" style="border: 5px solid #FF7A45" data-aos="fade-left"  data-aos-duration="1000">
             <h2 style="color:#FF7A45">產地</h2>
             <p>苗栗：通霄、公館</p>
             <p>新竹：橫山、寶山</p>
@@ -100,7 +101,7 @@
     <!-- 挑選水果 -->
     <section id="choose">
         <h1 style="color:#FF7A45">選購指南</h1>
-        <div id="choose-grid">
+        <div id="choose-grid" data-aos="fade-up"  data-aos-duration="1000">
             <div id="see">
                 <img src="../img/chooseO.png" alt="">
                 <h2 style="color:#FF7A45">顔色</h2>
@@ -161,7 +162,8 @@
                 <h4>牛奶中的蛋白質易與橘子中的果酸和維生素C發生反應，凝固成塊，不僅影響消化吸收，會引起腹脹、腹痛、腹瀉等症狀。另外，胃腸、腎、肺功能虛寒者不可多吃，以免誘發腹痛、腰膝酸軟等症。</h4>
             </div>
             <div class="reason" id="reason2">
-                <h4>蘿蔔進入人體後，會迅速產生一種叫硫酸鹽的物質，並很快代謝產生一種抗甲狀腺的物質——硫氰酸。若這時進食橘子，橘子中的類黃酮物質會在腸道被分解，而轉化成羥苯甲酸和阿魏酸，它們可以加強硫氰酸對甲狀腺的抑制作用，從而誘發或導致甲狀腺腫。</h4>
+                <h4>蘿蔔進入人體後，會迅速產生一種叫硫酸鹽的物質，並很快代謝產生一種抗甲狀腺的物質——硫氰酸。若這時進食橘子，橘子中的類黃酮物質會在腸道被分解，而轉化成羥苯甲酸和阿魏酸，它們可以加強硫氰酸對甲狀腺的抑制作用，從而誘發或導致甲狀腺腫。
+                </h4>
             </div>
             <div class="reason" id="reason3">
                 <h4>橘子含有豐富的果酸和維生素C ，服用維生素K 、磺胺類藥物、安體舒通、氨苯喋啶和補鉀藥物時，均應忌食橘子。</h4>
@@ -177,7 +179,7 @@
     </section>
 
     <!-- 營養成分 -->
-    <section id="nutrition" style="background-color: #FF7A45">
+    <section id="nutrition" style="background-color: #FF7A45" data-aos="zoom-in" data-aos-duration="800">
         <h1>營養成分</h1>
         <p>水果含有豐富的營養，尤其是一些水果中所含的特殊營養物質，對人體健康很有好處，來看看這些健康水果成分吧！</p>
         <div class="d-btn">
@@ -189,7 +191,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js"></script>
-
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

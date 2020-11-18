@@ -7,6 +7,7 @@
     <title>PICK</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/PICK-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -27,14 +28,14 @@
         <ul>
             <li><a href="../1-about.html"><span>01</span>認識我們</a></li>
             <li><a href="../2-products.html"><span>02</span>您的選擇</a></li>
-            <li><a href="../3-nutrition.html"><span>03</span>營養比例</a></li>
+            <li><a href="../3-nutrition.html"><span>03</span>成分比例</a></li>
             <li><a href="../4-contact.html"><span>04</span>聯絡我們</a></li>
         </ul>
     </nav>
 
     <!-- 水果特性 -->
     <div id="intro">
-        <img src="../img/blueberry-intro.png" alt="">
+        <img src="../img/blueberry-intro.png" alt="" data-aos="fade-right"  data-aos-duration="1000">
         <div class="content">
             <h1 style="color:#1f76a1">藍莓</h1>
             <p>藍莓，是地球上最古老的植物之一，也是地球上少有真正的藍色食物之一。美國印第安人食用藍莓早已有數百年之久，當地婦女更將它當作做月子的補品，由此可見其營養價值之高。
@@ -83,13 +84,13 @@
 
     <!-- 水果產地和月份 -->
     <section id="info">
-        <div id="month" style="background-color:#1f76a1">
+        <div id="month" style="background-color:#1f76a1" data-aos="fade-right"  data-aos-duration="1000">
             <h2>月份</h2>
             <img src="../img/month.png" alt="">
             <p>盛產期</p>
             <p>6月中 ~ 8月中</p>
         </div>
-        <div id="place" style="border: 5px solid #1f76a1">
+        <div id="place" style="border: 5px solid #1f76a1" data-aos="fade-left"  data-aos-duration="1000">
             <h2 style="color:#1f76a1">產地</h2>
             <p>台中清境農場</p>
             <p style="color:red">產量不大</p>
@@ -99,7 +100,7 @@
     <!-- 挑選水果 -->
     <section id="choose">
         <h1 style="color:#1f76a1">選購指南</h1>
-        <div id="choose-grid">
+        <div id="choose-grid" data-aos="fade-up"  data-aos-duration="1000">
             <div id="see">
                 <img src="../img/chooseB.png" alt="">
                 <h2 style="color:#1f76a1">顔色</h2>
@@ -168,7 +169,7 @@
     </section>
 
     <!-- 營養成分 -->
-    <section id="nutrition" style="background-color: #1f76a1">
+    <section id="nutrition" style="background-color: #1f76a1" data-aos="zoom-in" data-aos-duration="800">
         <h1>營養成分</h1>
         <p>水果含有豐富的營養，尤其是一些水果中所含的特殊營養物質，對人體健康很有好處，來看看這些健康水果成分吧！</p>
         <div class="d-btn">
@@ -180,6 +181,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js"></script>
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
