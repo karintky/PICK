@@ -11,9 +11,10 @@
 /* 首頁 */
 .index-logo img{
   background-attachment: fixed;
-  height: 120px;
-  width: 120px;
-  margin: 50px;
+  height: 150px;
+  width: 150px;
+  /* 上，右，下，左 */
+  margin: 70px 0px 0px 100px;
   position: relative;
   z-index: 1;
 }
@@ -22,6 +23,7 @@
 align-items: center;
 width: 800px;
 height: 800px;
+cursor: pointer;
 }
 
 .carousel-caption h1{
