@@ -208,6 +208,12 @@ nav ul li a:hover {
   background-position: center;
 }
 
+#about-box img{
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+
 #about-box{
   height: 60vh;
   display: grid;
@@ -226,7 +232,6 @@ nav ul li a:hover {
 }
 
 #contact p{
-
 padding-bottom: 100px;
 }
 
@@ -235,8 +240,8 @@ padding-bottom: 100px;
 }
 
 #about-box img{
-  width: 200px;
-  height: 200px;
+  height: 80%;
+  margin: 30px 30px;
 }
 
 #aboutus,#contact{
