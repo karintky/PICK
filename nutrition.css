@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
 * {
-    font-family: 微軟正黑體;
+    font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,6 +49,7 @@
 .hlg h2, .juzi h2,.banana h2,.siga h2,.kiwi h2,.lanmei h2,.grape h2{
     padding-top: 150px;
     padding-left: 30px;
+    font-size: 30px;
 }
 
 .hlg h2{
@@ -79,9 +82,9 @@
 .kiwi ul,
 .lanmei ul,
 .grape ul {
-    padding-top: 40px;
+    padding-top: 50px;
     color: #8f8f8f;
-    line-height: 50px;
+    line-height: 55px;
     padding-left: 50px;
     font-weight: bold;
 
