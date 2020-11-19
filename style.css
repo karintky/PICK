@@ -21,8 +21,8 @@
 
 .carousel-caption img{
 align-items: center;
-width: 800px;
-height: 800px;
+width: 700px;
+height: 700px;
 cursor: pointer;
 }
 
@@ -56,13 +56,13 @@ cursor: pointer;
 }
 
 .carousel-item:nth-child(1) {
-  background-color:#BA243D;
+  background-color:#EA5253;
 }
 .carousel-item:nth-child(2) {
-  background-color:#FF7A45;
+  background-color:#FE7250;
 }
 .carousel-item:nth-child(3) {
-  background-color:#FFDC00;
+  background-color:#FED361;
 }
 .carousel-item:nth-child(4) {
   background-color:#8fc43a;
@@ -195,7 +195,7 @@ nav ul li a:hover {
 }
 
 #menu-btn:checked+label.menu-btn .bar {
-  background-color: #f2ff39;
+  background-color: #e5ddd7;
 }
 
 #menu-btn:checked+label.menu-btn .bar:nth-child(2) {
@@ -231,6 +231,7 @@ nav ul li a:hover {
 
 
 #about-box{
+  color:#4e4e4e;
   height: 60vh;
   display: grid;
   grid-template-columns: 20% 40% 40%;
@@ -266,24 +267,24 @@ padding-bottom: 100px;
 }
 
 #contact{
-  background-color: #fffcd3;
+  background-color: #F3F0E2;
 }
 
 #contact a{
+  letter-spacing: 5px;
   text-decoration: none;
-  border: 3px solid black;
-  border-radius: 10px;
+  border: 3px solid #2d5c81;
+  border-radius: 5px;
   padding: 20px 30px;
   font-size: 30px;
   font-weight: bolder;
   margin-left: 35%;
-  background-color: #fff;
-  color: #424242;
+  color: #2d5c81;
   transition: 0.5s;
 }
 
 #contact a:hover{
-  background-color: #4e4e4e;
+  background-color: #2d5c81;
   color: #fff;
 }
 
@@ -503,7 +504,7 @@ padding-bottom: 100px;
 
 
 .red {
-  background-color: #BA243D;
+  background-color: #EA5253;
 }
 
 .orange {
@@ -511,7 +512,7 @@ padding-bottom: 100px;
 }
 
 .yellow {
-  background-color: #FFED54;
+  background-color: #FED361;
 }
 
 .green {
@@ -559,7 +560,6 @@ padding-bottom: 100px;
   font-size: 80px;
   padding-left: 50px;
   font-weight: 700;
-  color: #BA243D;
 }
 
 .content p {
@@ -782,8 +782,12 @@ width: 350px;
   color: white;
   cursor: pointer;
   border: none;
+  /* transition: 0.5s; */
 }
 
+/* .button:hover{
+  background-color:#000;
+} */
 
 .reason-box {
   text-align: center;
